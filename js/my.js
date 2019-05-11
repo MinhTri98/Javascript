@@ -5,7 +5,7 @@
 //    alert (message);
 // }//hàm kiểm tra bằng mutiple '?'
 // min(3,2);
-
+sdfsdf
 // function min2(a,b){
 //    if(a>b){
 //       alert(b);
