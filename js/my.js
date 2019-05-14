@@ -5,7 +5,7 @@
 //    alert (message);
 // }//hàm kiểm tra bằng mutiple '?'
 // min(3,2);
-sdfsdf
+
 // function min2(a,b){
 //    if(a>b){
 //       alert(b);
@@ -36,8 +36,57 @@ sdfsdf
 // ask("Do you agree",() => alert("You agreed"), () => alert("You canceled the execution"));
 
 //cau 2
-let i=0;
-while (i<3){
-   alert( `number ${i}!` );
-   i++;
+// let i=0;
+// while (i<3){
+//    alert( `number ${i}!` );
+//    i++;
+// }
+
+//object
+
+let user = {
+   name : "John",
+   surname : "Smith"
+};
+alert(user.name);
+
+user.name = "Pete";
+alert(user.name);
+
+delete user.name;
+alert(user.name);
+
+let salaries = {
+   John : 100,
+   Ann : 160,
+   Pete : 130
+};
+let result = 0;
+if ("John" in salaries && "Ann" in salaries && "Pete" in salaries){
+   let sum = 0;
+   for(let price in salaries){
+      sum = sum + salaries[price];
+   }
+   result = sum;
 }
+else{
+   result = 0;
+}
+
+alert(result);
+
+let menu = {
+   width: 200,
+   height: 300,
+   title: "My menu"
+ };
+
+function multiplyNumeric(menu){
+    for (let key in menu){
+      if  (typeof(menu[key]) == 'number'){
+        menu[key] = menu[key]*2;
+      }
+      alert(menu[key]);
+    }
+}
+multiplyNumeric(menu);
